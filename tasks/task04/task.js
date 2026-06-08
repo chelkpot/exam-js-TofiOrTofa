@@ -12,7 +12,11 @@
 
 function findMax(arr) {
   
-  // Ваш код здесь
+  let maxi = arr[0]
+  arr.forEach(num => {
+    if (num > maxi) {maxi = num}
+  });
+  return maxi;
 }
 
 module.exports = { findMax };

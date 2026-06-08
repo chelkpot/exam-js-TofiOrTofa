@@ -11,7 +11,14 @@
 
 function filterEven(arr) {
   
-  // Ваш код здесь
+  const arrayOutput = [];
+  arr.forEach(num  => {
+    if (num % 2 == 0)
+    {
+      arrayOutput.push(num)
+    };
+  });
+  return arrayOutput;
 }
 
 module.exports = { filterEven };

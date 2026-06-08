@@ -13,8 +13,19 @@
  */
 
 function flattenOnce(arr) {
+  const result = [];
   
-  // Ваш код здесь
+  arr.forEach(element => {
+    if (Array.isArray(element)) {
+      // Если это массив, «раскрываем» его элементы в конец result
+      result.push(...element);
+    } else {
+      // Если это обычный элемент, просто добавляем его
+      result.push(element);
+    }
+  });
+  
+  return result;
 }
 
 module.exports = { flattenOnce };

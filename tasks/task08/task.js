@@ -17,7 +17,16 @@
 
 function getGrade(score) {
   
-  // Ваш код здесь
+  if (score > -1){
+    if (score > 59){
+      if (score > 74){
+        if (101 > score > 89){return "отлично"}
+        else {return "хорошо"}
+      }
+      else {return "удовлетворительно"}
+    }
+    else {return "неудовлетворительно"}
+  }
 }
 
 module.exports = { getGrade };

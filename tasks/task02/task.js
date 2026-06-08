@@ -12,7 +12,12 @@
 
 function sumArray(arr) {
   
-  // Ваш код здесь
+  // я умный, я буду использовать forEach
+  let array = 0;
+  arr.forEach(num => {
+    array = array + num;
+  });
+  return array;
 }
 
 module.exports = { sumArray };

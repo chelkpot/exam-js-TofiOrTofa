@@ -14,7 +14,21 @@
 
 function getUnique(arr) {
   
-  // Ваш код здесь
+  const array = [arr[0]];
+  arr.forEach(element => {
+    let i = 0;
+    array.forEach(secondElement => {
+      if (element != secondElement)
+      {
+        i++
+      }
+    });
+    if (i == array.length)
+    {
+      array.push(element)
+    }
+  });
+  return array;
 }
 
 module.exports = { getUnique };

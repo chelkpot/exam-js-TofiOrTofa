@@ -11,8 +11,19 @@
  */
 
 function rowSums(matrix) {
-  
-  // Ваш код здесь
+  const result = [];
+
+  matrix.forEach(row => {
+    let sum = 0;
+    // Считаем сумму элементов внутри одной строки
+    row.forEach(num => {
+      sum += num;
+    });
+    // Добавляем готовую сумму строки в наш итоговый массив
+    result.push(sum);
+  });
+
+  return result;
 }
 
 module.exports = { rowSums };

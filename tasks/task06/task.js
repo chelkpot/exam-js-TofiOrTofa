@@ -12,8 +12,11 @@
  */
 
 function countOccurrences(arr, value) {
-  
-  // Ваш код здесь
+  let i = 0;
+  arr.forEach(element => {
+    if (element == value){i++}
+  });
+  return i;
 }
 
 module.exports = { countOccurrences };

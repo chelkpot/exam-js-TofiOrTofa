@@ -13,7 +13,8 @@
 
 function reverseString(str) {
   
-  // Ваш код здесь
+  if (str != ""){return reverseString(str.slice(0, -1))}
+  else {return ""}
 }
 
 module.exports = { reverseString };

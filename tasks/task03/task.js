@@ -20,12 +20,12 @@ function fizzBuzz(n) {
     if (i % 3 == 0)
     {
       numbers[numbers.length - 1] = "Fizz"
-    }
-    else if (i % 5 == 0)
+    };
+    if (i % 5 == 0)
     {
       numbers[numbers.length - 1] = numbers[numbers.length - 1] + "Buzz"
-    }
-    else
+    };
+    if (numbers[numbers.length -1] == "")
     {
       numbers[numbers.length - 1] = String(i)
     };
